@@ -1,0 +1,25 @@
+﻿@model List<Course>
+
+
+@{
+    ViewData["Title"] = "Register Course";
+}
+
+<div class="w-100 d-flex align-items-center justify-content-center">
+    <div class="w-50 d-flex flex-column align-items-center justify-content-center">
+        <h3>Enroll new course</h3>
+        @foreach (var course in Model)
+        {
+            <div class="w-100 d-flex justify-content-between p-3 mt-4" style="border:1px solid black;border-radius:20px;">
+                <h4>@course.Name</h4>
+                <form style="margin-left:20px;" action="" method="post">
+                    <input name="CourseId" value="@course.Id" hidden />
+                    <button type="submit"
+                        class="btn-success text-white rounded-3 p-1">
+                        ENROLL
+                    </button>
+                </form>
+            </div>
+        }
+    </div>
+</div>

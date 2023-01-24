@@ -1,0 +1,23 @@
+﻿@model Student
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="text-center d-flex flex-column align-items-center w-100" style="height:fit-content;">
+    <h2 class="display-4">Welcome to the Students E-Gate</h2>
+    <div class="py-5 px-3 rounded-3" style="width:35%;border:1px solid gray;margin-top:50px;">
+        <h3 class="w-100" style="text-align:left;">Login</h3>
+        <form class="d-flex flex-column w-100" action="/students/login" method="post">
+            <input class="w-100 p-3 rounded-3 mt-3" name="Email" placeholder="Email" />
+            <input class="w-100 p-3 rounded-3 mt-3" name="Password" type="password" placeholder="Password" />
+            <button class="p-3 bg-primary text-white mt-3 rounded-3"
+                    style="outline:none;border:none;"
+                    type="submit">
+                LOGIN
+            </button>
+        </form>
+    </div>
+    <div class="mt-4">
+        <h5>or <a style="text-decoration:none;" href="/students/register">REGISTER</a> as a new student</h5>
+    </div>
+</div>

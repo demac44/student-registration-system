@@ -1,0 +1,13 @@
+﻿@model IEnumerable<Department>
+
+@{
+    ViewData["Title"] = "Departments";
+}
+
+<div class="w-100 d-flex flex-column align-items-center">
+    @foreach(var item in Model)
+    {
+        <p class="border border-1 border-black w-25 rounded-2 p-2">@item.Name</p>
+    }
+    <a class="text-center bg-primary p-2 text-decoration-none text-white rounded-2 w-25" href="/departments/add">ADD NEW DEPARTMENT</a>
+</div>
