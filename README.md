@@ -1,4 +1,4 @@
-# university
+# Student registration system
 Student registration system with ASP.NET Core and SQL
 
 ## Technologies:
