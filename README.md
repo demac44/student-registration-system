@@ -4,9 +4,6 @@ Student registration system with ASP.NET Core and SQL
 ## Technologies:
  ### ASP.NET Core | ASP.NET MVC | SQL
 
-## ER Diagram
-![alt text][img3]
-
 ## Login page
 ![alt text][img1]
 
